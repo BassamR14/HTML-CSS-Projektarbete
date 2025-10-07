@@ -1,3 +1,5 @@
+@import "variables";
+
 .products {
   text-align: center;
 
@@ -30,10 +32,9 @@
 
     .buttons {
       @include flex(row, space-between, center);
-      // couldn't color the button using a variable
 
       .button {
-        background-color: #004085;
+        background-color: $buttoncolor;
         border: none;
         color: white;
         padding: 5px 5px;
@@ -45,7 +46,7 @@
 
         &:hover {
           cursor: pointer;
-          background-color: #0069d9;
+          background-color: $hovercolor;
         }
       }
     }
