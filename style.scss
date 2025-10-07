@@ -22,12 +22,29 @@ header {
 .header-container {
   @include flex(column, flex-start, center);
   gap: 10px;
+  background-color: #2c2c2e;
 
   input {
     height: 25px;
     width: 250px;
     border-radius: 15px;
     padding: 13px 0;
+  }
+
+  @include desktop {
+    @include flex(row, space-between, center);
+    // width: 90%;
+    // margin: 0 auto;
+    position: sticky;
+    top: 0;
+
+    .nav {
+      padding-left: 100px;
+    }
+
+    label {
+      padding-right: 100px;
+    }
   }
 }
 
@@ -46,6 +63,10 @@ header {
       background-color: #ff6b2d;
     }
   }
+
+  @include desktop {
+    @include flex(row, space-around, center);
+  }
 }
 
 body {
@@ -57,6 +78,13 @@ body {
     border-color: $buttoncolor;
     font-weight: bold;
     padding: 5px 10px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $hovercolor;
+      border-color: $hovercolor;
+      color: white;
+    }
   }
 }
 
@@ -81,4 +109,10 @@ footer {
     text-decoration: none;
     color: white;
   }
+}
+
+.bigbox {
+  background-color: green;
+  height: 1000px;
+  width: 500px;
 }

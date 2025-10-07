@@ -1,5 +1,10 @@
 .products {
   text-align: center;
+
+  @include desktop {
+    text-align: left;
+    padding-left: 5.4%;
+  }
 }
 
 .product-container {
@@ -11,6 +16,7 @@
     border-radius: 15px;
     padding: 10px 10px;
     width: 350px;
+    background-color: white;
     @include flex(column, center, center);
 
     img {
@@ -25,6 +31,32 @@
     .buttons {
       width: 50%;
       @include flex(row, space-between, center);
+      // couldn't color the button using a variable
     }
+
+    @include desktop {
+      img {
+        max-inline-size: 80%;
+      }
+
+      .price {
+        width: 55%;
+      }
+
+      .buttons {
+        width: 60%;
+      }
+
+      // to get the price and butons at the same height as the other flex-items
+      &:last-of-type {
+        img {
+          margin-bottom: 67px;
+        }
+      }
+    }
+  }
+
+  @include desktop {
+    @include flex(row, space-around, stretch);
   }
 }
