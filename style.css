@@ -1,7 +1,7 @@
 .products {
   text-align: center;
 }
-@media (width > 425px) {
+@media (width > 875px) {
   .products {
     text-align: left;
     padding-left: 5.4%;
@@ -43,7 +43,7 @@
   justify-content: space-between;
   align-items: center;
 }
-@media (width > 425px) {
+@media (width > 875px) {
   .product-container .product-card img {
     max-inline-size: 80%;
   }
@@ -57,7 +57,7 @@
     margin-bottom: 67px;
   }
 }
-@media (width > 425px) {
+@media (width > 875px) {
   .product-container {
     display: flex;
     flex-direction: row;
@@ -77,6 +77,12 @@ header {
   width: 100px;
 }
 
+.navbar {
+  width: 100%;
+  background-color: #2c2c2e;
+  padding-bottom: 5px;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
@@ -91,12 +97,14 @@ header {
   border-radius: 15px;
   padding: 13px 0;
 }
-@media (width > 425px) {
+@media (width > 875px) {
   .header-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
     position: sticky;
     top: 0;
   }
@@ -117,9 +125,9 @@ header {
   border-radius: 5px;
 }
 .nav a:hover {
-  background-color: #ff6b2d;
+  background-color: #5ac8fa;
 }
-@media (width > 425px) {
+@media (width > 875px) {
   .nav {
     display: flex;
     flex-direction: row;
@@ -133,15 +141,17 @@ body {
   background-color: #f4f7fa;
 }
 body button {
-  background-color: #34c759;
-  border-color: #34c759;
+  background-color: #007aff;
+  border: none;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: white;
 }
 body button:hover {
   cursor: pointer;
-  background-color: #007aff;
-  border-color: #007aff;
+  background-color: #5ac8fa;
+  border-color: #5ac8fa;
   color: white;
 }
 
@@ -169,10 +179,4 @@ footer img {
 footer a {
   text-decoration: none;
   color: white;
-}
-
-.bigbox {
-  background-color: green;
-  height: 1000px;
-  width: 500px;
 }/*# sourceMappingURL=style.css.map */
