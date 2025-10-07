@@ -70,22 +70,6 @@ header {
 body {
   margin: 0;
   background-color: #f4f7fa;
-
-  button {
-    background-color: $buttoncolor;
-    border: none;
-    font-weight: bold;
-    padding: 10px 10px;
-    border-radius: 5px;
-    color: white;
-
-    &:hover {
-      cursor: pointer;
-      background-color: $hovercolor;
-      border-color: $hovercolor;
-      color: white;
-    }
-  }
 }
 
 footer {

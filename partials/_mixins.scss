@@ -4,3 +4,8 @@
   justify-content: $content;
   align-items: $align;
 }
+
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}

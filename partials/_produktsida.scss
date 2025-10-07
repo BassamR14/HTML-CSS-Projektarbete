@@ -29,9 +29,25 @@
     }
 
     .buttons {
-      width: 50%;
       @include flex(row, space-between, center);
       // couldn't color the button using a variable
+
+      .button {
+        background-color: #004085;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        @include size(90px, 23px);
+        font-weight: bold;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #0069d9;
+        }
+      }
     }
 
     @include desktop {
