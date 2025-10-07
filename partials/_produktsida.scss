@@ -1,0 +1,30 @@
+.products {
+  text-align: center;
+}
+
+.product-container {
+  @include flex(column, center, center);
+  gap: 10px;
+
+  .product-card {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 350px;
+    @include flex(column, center, center);
+
+    img {
+      max-inline-size: 70%;
+    }
+
+    .price {
+      width: 50%;
+      @include flex(row, space-between, center);
+    }
+
+    .buttons {
+      width: 50%;
+      @include flex(row, space-between, center);
+    }
+  }
+}
