@@ -95,16 +95,10 @@ header {
   .header-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: sticky;
     top: 0;
-  }
-  .header-container .nav {
-    padding-left: 100px;
-  }
-  .header-container label {
-    padding-right: 100px;
   }
 }
 

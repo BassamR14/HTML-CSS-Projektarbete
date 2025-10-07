@@ -32,19 +32,11 @@ header {
   }
 
   @include desktop {
-    @include flex(row, space-between, center);
+    @include flex(row, space-around, center);
     // width: 90%;
     // margin: 0 auto;
     position: sticky;
     top: 0;
-
-    .nav {
-      padding-left: 100px;
-    }
-
-    label {
-      padding-right: 100px;
-    }
   }
 }
 
