@@ -9,8 +9,23 @@
 @import "partials/produktinfo";
 
 header {
-  background-color: #2c2c2e;
+  background-color: $primarycolor;
   padding: 10px 0;
+
+  h1 {
+    color: #ff7f00;
+    text-align: center;
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+}
+
+h2,
+h3 {
+  color: $primarycolor;
 }
 
 .logo {
@@ -21,20 +36,27 @@ header {
 
 .navbar {
   width: 100%;
-  background-color: #2c2c2e;
+  background-color: $primarycolor;
   padding-bottom: 5px;
 }
 
 .header-container {
   @include flex(column, flex-start, center);
   gap: 10px;
-  background-color: #2c2c2e;
+  background-color: $primarycolor;
 
   input {
     height: 25px;
     width: 250px;
     border-radius: 15px;
     padding: 13px 0;
+  }
+
+  .right-side {
+    @include desktop {
+      @include flex(row, center, center);
+      gap: 10px;
+    }
   }
 
   @include desktop {
@@ -50,6 +72,10 @@ header {
   @include flex(column, flex-start, center);
   gap: 5px;
   padding-top: 10px;
+
+  &:last-child {
+    @include flex(row, space-around, center);
+  }
 
   a {
     text-decoration: none;
@@ -76,9 +102,9 @@ footer {
   @include flex(column, space-around, center);
   gap: 10px;
   color: white;
-  background-color: #2c2c2e;
+  background-color: $primarycolor;
   padding: 10px 0;
-  margin-top: 10px;
+  margin-top: 30px;
 
   nav {
     @include flex(row, center, center);
