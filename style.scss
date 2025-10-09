@@ -84,11 +84,13 @@ h3 {
     border-radius: 5px;
 
     &.active-page {
-      background-color: $hovercolor;
+      background-color: $backgroundcolor;
+      color: $primarycolor;
     }
 
     &:hover {
       background-color: $hovercolor;
+      color: white;
     }
   }
 
