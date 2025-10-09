@@ -48,11 +48,12 @@
   background-color: #434346;
   border: none;
   color: white;
-  padding: 5px 5px;
+  padding: 10px 5px;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
-  height: 23px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
   width: 90px;
 }
 .product-container .product-card .buttons .button:hover {
