@@ -9,3 +9,8 @@
   height: $height;
   width: $width;
 }
+
+@mixin margin-LR($value) {
+  margin-left: $value;
+  margin-right: $value;
+}

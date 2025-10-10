@@ -1,0 +1,98 @@
+@import "variables";
+
+.product-nav {
+  background-color: $primarycolor;
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  width: max-content;
+  @include margin-LR(auto);
+  border-radius: 10px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+
+    &.active-page-2 {
+      border-bottom: 6px solid $hovercolor;
+    }
+
+    &:hover {
+      background-color: $hovercolor;
+      color: white;
+    }
+  }
+}
+
+main {
+  .product-name {
+    text-align: center;
+  }
+
+  .main-container {
+    @include flex(column, center, center);
+
+    @include desktop {
+      @include flex(row, center, center);
+      gap: 100px;
+
+      article {
+        &:first-child {
+          align-self: flex-start;
+        }
+      }
+    }
+
+    img {
+      //   max-inline-size: 70%;
+      //   border: 3px solid black;
+      border-radius: 10px;
+      width: 300px;
+    }
+
+    .picture-container {
+      @include flex(row, flex-start, center);
+      gap: 5px;
+
+      img {
+        width: 130px;
+      }
+    }
+
+    .product-information {
+      @include flex(column, flex-start, stretch);
+      width: 375px;
+
+      @include desktop {
+        border-left: 1px solid black;
+        padding-left: 100px;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      h3 {
+        border-top: 1px solid black;
+        padding-top: 10px;
+
+        @include desktop {
+          border-top: none;
+        }
+      }
+
+      p {
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+
+        &:not(.bold) {
+          border-bottom: 1px solid black;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+}
