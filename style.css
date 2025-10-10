@@ -172,6 +172,7 @@ main .main-container .product-information h3 {
 @media (width > 875px) {
   main .main-container .product-information h3 {
     border-top: none;
+    padding-top: 0;
   }
 }
 main .main-container .product-information p {

@@ -81,6 +81,7 @@ main {
 
         @include desktop {
           border-top: none;
+          padding-top: 0;
         }
       }
 
