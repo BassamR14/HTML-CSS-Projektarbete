@@ -23,6 +23,12 @@
     background-color: white;
     @include flex(column, center, center);
 
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      transform: scale(1.02);
+      transition: all 0.2s linear;
+    }
+
     img {
       max-inline-size: 70%;
     }

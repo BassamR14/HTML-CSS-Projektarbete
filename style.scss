@@ -45,14 +45,30 @@ h3 {
   gap: 10px;
   background-color: $primarycolor;
 
-  input {
-    height: 25px;
-    width: 250px;
-    border-radius: 15px;
-    padding: 13px 0;
-  }
+  // input {
+  //   height: 25px;
+  //   width: 250px;
+  //   border-radius: 15px;
+  //   padding: 13px 0;
+  // }
 
   .right-side {
+    .search-bar {
+      width: max-content;
+      display: flex;
+      align-items: center;
+      padding: 4px;
+      border-radius: 16px;
+      background-color: $backgroundcolor;
+
+      input {
+        margin-left: 4px;
+        outline: none;
+        border: none;
+        background: transparent;
+      }
+    }
+
     @include desktop {
       @include flex(row, center, center);
       gap: 10px;
