@@ -1,0 +1,16 @@
+@mixin flex($direction, $content, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $align;
+}
+
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+@mixin margin-LR($value) {
+  margin-left: $value;
+  margin-right: $value;
+}

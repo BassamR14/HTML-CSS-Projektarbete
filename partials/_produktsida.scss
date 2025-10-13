@@ -1,0 +1,86 @@
+@import "variables";
+
+.products {
+  text-align: center;
+
+  @include desktop {
+    text-align: left;
+    padding-left: 5.4%;
+  }
+}
+
+.product-container {
+  @include flex(column, center, center);
+  gap: 10px;
+
+  .product-card {
+    border: 2px solid $primarycolor;
+    border-radius: 15px;
+    padding: 10px 10px;
+    // width: 350px;
+    max-width: 350px;
+    box-sizing: border-box;
+    background-color: white;
+    @include flex(column, center, center);
+
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      transform: scale(1.02);
+      transition: all 0.2s linear;
+    }
+
+    img {
+      max-inline-size: 70%;
+    }
+
+    .price {
+      width: 50%;
+      @include flex(row, space-between, center);
+    }
+
+    .buttons {
+      @include flex(row, space-between, center);
+      width: 70%;
+
+      .button {
+        background-color: $buttoncolor;
+        border: none;
+        color: white;
+        padding: 10px 5px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 16px;
+        // @include size(90px, 23px);
+        width: 90px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $hovercolor;
+        }
+      }
+    }
+
+    @include desktop {
+      img {
+        max-inline-size: 80%;
+      }
+
+      .price {
+        width: 55%;
+      }
+
+      // to get the price and butons at the same height as the other flex-items
+      &:last-of-type {
+        img {
+          margin-bottom: 67px;
+        }
+      }
+    }
+  }
+
+  @include desktop {
+    @include flex(row, space-around, stretch);
+  }
+}
