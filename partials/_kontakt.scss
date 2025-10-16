@@ -1,0 +1,77 @@
+@import "variables";
+@import "mixins";
+@import "media-query";
+
+.Kontakt-rubrik {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.kontakt-container {
+@include flex(column, center, center);
+gap: 40px;
+padding: 40px 20px;
+text-align: center;
+margin: 0 auto;
+
+@include desktop {
+    @include flex(row, space-around, center);
+  }
+}
+
+.right {
+    @include flex(column, space-evenly, center);
+    font-family: "Times New Roman", Times, serif;
+}
+
+.left {
+  @include flex(column, space-evenly, center);
+}
+
+.right input,
+.right select,
+.right textarea {
+  width: 80%;
+  margin-bottom: 1px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.skicka {
+    width: 100px;
+    height: 40px;
+    background-color: $buttoncolor;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    
+    &:hover {
+          cursor: pointer;
+          background-color: $hovercolor;
+        }
+}
+
+.support {
+    color: $buttoncolor;
+
+    &:hover {
+          cursor: pointer;
+          color: $hovercolor;
+        }
+}
+
+.företagsbild {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+strong {
+    font-size: 1.25rem;
+}

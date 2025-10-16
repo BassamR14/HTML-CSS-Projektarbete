@@ -1,3 +1,89 @@
+@charset "UTF-8";
+.Kontakt-rubrik {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.kontakt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (width > 875px) {
+  .kontakt-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.right input,
+.right select,
+.right textarea {
+  width: 80%;
+  margin-bottom: 1px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.skicka {
+  width: 100px;
+  height: 40px;
+  background-color: #434346;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+.skicka:hover {
+  cursor: pointer;
+  background-color: #b35500;
+}
+
+.support {
+  color: #434346;
+}
+.support:hover {
+  cursor: pointer;
+  color: #b35500;
+}
+
+.företagsbild {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+strong {
+  font-size: 1.25rem;
+}
+
 .products {
   text-align: center;
 }
@@ -83,6 +169,39 @@
     justify-content: space-around;
     align-items: stretch;
   }
+}
+
+.referens-rubrik {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.referens-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 0 auto;
+  height: 800px;
+  background-color: #f4f7fa;
+}
+@media (width > 875px) {
+  .referens-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.recension {
+  height: 60px;
+  width: 300px;
+  border: solid black;
+  padding: 10px;
 }
 
 .product-nav {

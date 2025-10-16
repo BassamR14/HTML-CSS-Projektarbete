@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+@import "media-query";
+
+.referens-rubrik {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.referens-container {
+@include flex(column, space-evenly, center);
+gap: 40px;
+padding: 40px 20px;
+text-align: center;
+margin: 0 auto;
+height: 800px;
+background-color: $backgroundcolor;
+
+@include desktop {
+    @include flex(row, space-evenly, center);
+  }
+}
+
+.recension {
+    height: 60px;
+    width: 300px;
+    border: solid black;
+    padding: 10px;
+}
