@@ -1,3 +1,67 @@
+@charset "UTF-8";
+.om-oss {
+  text-align: center;
+}
+.om-oss h2 {
+  margin-bottom: 10px;
+  color: #2c2c2e;
+}
+.om-oss p {
+  margin-bottom: 20px;
+  color: #2c2c2e;
+}
+.om-oss blockquote {
+  font-style: italic;
+  margin: 20px auto;
+  max-inline-size: 60%;
+  color: #2c2c2e;
+}
+
+h3 {
+  text-align: center;
+  color: #2c2c2e;
+}
+
+.anställda {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.anställda article {
+  background-color: #f4f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.anställda h4 {
+  text-align: center;
+}
+.anställda .employee-photo {
+  max-inline-size: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.anställda .position {
+  text-align: center;
+  font-style: italic;
+  color: #2c2c2e;
+}
+.anställda p {
+  text-align: center;
+  color: #2c2c2e;
+}
+.anställda .mail {
+  text-align: center;
+  display: block;
+  color: darkred;
+  text-decoration: none;
+}
+.anställda .mail:hover {
+  color: #b35500;
+}
+
 .products {
   text-align: center;
 }
