@@ -1,0 +1,90 @@
+@import "variables";
+
+.om-oss {
+  text-align: center;
+
+  h2 {
+   
+    margin-bottom: 10px;
+    color: $primarycolor;
+  }
+
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    color: $primarycolor;
+  }
+
+  blockquote {
+    
+    font-style: italic;
+    margin: 20px auto;
+    max-inline-size: 60%;
+    color: $primarycolor;
+  }
+
+  
+}
+
+h3 {
+    text-align: center;
+    color: $primarycolor;
+    
+}
+
+.anställda {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+
+  article {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: rgba(239, 239, 239, 0.831);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid $primarycolor;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .employee-photo {
+    max-inline-size: 80%;
+    @include margin-LR(auto);
+    display: block;
+  }
+
+  .position {
+    text-align: center;
+    font-style: italic;
+    color: $primarycolor;
+    
+  }
+
+  p {
+    text-align: center;
+    color: $primarycolor;
+  }
+
+  .mail {
+    text-align: center;
+    display: block;
+    color: darkred;
+    text-decoration: none;
+
+    &:hover {
+      color: $hovercolor;
+    }
+  }
+
+
+@include desktop {
+   
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
