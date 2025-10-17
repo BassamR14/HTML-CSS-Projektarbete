@@ -31,9 +31,12 @@ h3 {
   margin-top: 30px;
 }
 .anställda article {
-  background-color: #f4f7fa;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: rgba(239, 239, 239, 0.831);
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 15px;
+  border: 2px solid #2c2c2e;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .anställda h4 {
@@ -63,12 +66,12 @@ h3 {
 .anställda .mail:hover {
   color: #b35500;
 }
-
-@media (min-width: 768px) {
+@media (width > 875px) {
   .anställda {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .products {
   text-align: center;
 }

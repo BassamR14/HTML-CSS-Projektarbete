@@ -40,9 +40,12 @@ h3 {
   margin-top: 30px;
 
   article {
-    background-color: $backgroundcolor;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: rgba(239, 239, 239, 0.831);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 15px;
+    border: 2px solid $primarycolor;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
@@ -78,10 +81,10 @@ h3 {
       color: $hovercolor;
     }
   }
-}
 
-@media (min-width: 768px) {
-  .anställda {
+
+@include desktop {
+   
     grid-template-columns: repeat(3, 1fr); 
   }
 }
