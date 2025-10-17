@@ -22,8 +22,10 @@ h3 {
   width: 100%;
   background-color: $primarycolor;
   padding-bottom: 5px;
-  position: sticky;
-  top: 0;
+  @include desktop {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .header-container {
