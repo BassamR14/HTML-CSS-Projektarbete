@@ -294,6 +294,26 @@ main .main-container .product-information p:not(.bold) {
   padding: 5px 0;
 }
 
+* {
+  font-family: Arial, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+.bold {
+  font-family: "Times New Roman", serif;
+}
+
+.bold {
+  font-size: 1.2rem;
+}
+
 header {
   background-color: #2c2c2e;
   padding: 10px 0;
@@ -440,23 +460,10 @@ footer a {
   text-decoration: none;
   color: white;
 }
-
-* {
-  font-family: Arial, sans-serif;
+footer a:hover {
+  text-decoration: underline;
 }
-
-html {
-  font-size: 16px;
-}
-
-h1,
-h2,
-h3,
-h4,
-.bold {
-  font-family: "Times New Roman", serif;
-}
-
-.bold {
-  font-size: 1.2rem;
+footer p:first-of-type {
+  font-size: 1.3rem;
+  color: #ff7f00;
 }/*# sourceMappingURL=style.css.map */
