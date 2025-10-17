@@ -29,7 +29,7 @@
 }
 .product-container .product-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
+  transform: scale(1.05);
   transition: all 0.2s linear;
 }
 .product-container .product-card img {
@@ -104,10 +104,10 @@
   color: white;
   text-decoration: none;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .product-nav a.active-page-2 {
-  border-bottom: 6px solid #b35500;
+  border-bottom: 6px solid #ff7f00;
 }
 .product-nav a:hover {
   background-color: #b35500;
@@ -139,6 +139,10 @@ main .main-container img {
   border-radius: 10px;
   width: 300px;
 }
+main .main-container img:hover {
+  transform: scale(1.15);
+  transition: all 0.2s linear;
+}
 main .main-container .picture-container {
   display: flex;
   flex-direction: row;
@@ -150,15 +154,10 @@ main .main-container .picture-container img {
   width: 130px;
 }
 main .main-container .product-information {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
   width: 375px;
 }
 @media (width > 875px) {
   main .main-container .product-information {
-    border-left: 1px solid black;
     padding-left: 100px;
   }
 }
@@ -168,6 +167,7 @@ main .main-container .product-information .bold {
 main .main-container .product-information h3 {
   border-top: 1px solid black;
   padding-top: 10px;
+  font-size: 1.3rem;
 }
 @media (width > 875px) {
   main .main-container .product-information h3 {
@@ -213,6 +213,12 @@ h3 {
   width: 100%;
   background-color: #2c2c2e;
   padding-bottom: 5px;
+}
+@media (width > 875px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .header-container {
@@ -326,4 +332,24 @@ footer img {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+* {
+  font-family: Arial, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+.bold {
+  font-family: "Times New Roman", serif;
+}
+
+.bold {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style.css.map */
