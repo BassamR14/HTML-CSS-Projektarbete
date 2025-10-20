@@ -35,6 +35,20 @@ main {
   .main-container {
     @include flex(column, center, center);
 
+    article {
+      div {
+        .button {
+          display: block;
+          @include margin-LR(auto);
+        }
+        .special {
+          width: 120px;
+          padding: 20px 10px;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
     @include desktop {
       @include flex(row, center, center);
       gap: 100px;

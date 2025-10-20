@@ -1,3 +1,23 @@
+* {
+  font-family: $arial;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+.bold {
+  font-family: $timesnewroman;
+}
+
+.bold {
+  font-size: 1.2rem;
+}
+
 header {
   background-color: $primarycolor;
   padding: 10px 0;
@@ -67,8 +87,8 @@ h3 {
     @include flex(row, space-between, center);
     width: 90%;
     margin: 0 auto;
-    position: sticky;
-    top: 0;
+    // position: sticky;
+    // top: 0;
   }
 }
 
@@ -128,25 +148,51 @@ footer {
   a {
     text-decoration: none;
     color: white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    &:first-of-type {
+      font-size: 1.3rem;
+      color: $myorange;
+    }
   }
 }
 
-* {
-  font-family: $arial;
-}
-
-html {
+.button {
+  background-color: $buttoncolor;
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  // font-family: "Times New Roman", Times, serif;
   font-size: 16px;
+  // @include size(90px, 23px);
+  width: 90px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $hovercolor;
+  }
 }
 
-h1,
-h2,
-h3,
-h4,
-.bold {
-  font-family: $timesnewroman;
-}
+.price {
+  width: 50%;
+  @include flex(row, space-between, center);
+  @include margin_LR(auto);
 
-.bold {
-  font-size: 1.2rem;
+  &.special {
+    width: 70%;
+    padding: 20px 10px;
+    font-size: 1.3rem;
+  }
+
+  @include desktop {
+    width: 55%;
+  }
 }
