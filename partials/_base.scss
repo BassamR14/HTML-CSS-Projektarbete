@@ -87,8 +87,8 @@ h3 {
     @include flex(row, space-between, center);
     width: 90%;
     margin: 0 auto;
-    position: sticky;
-    top: 0;
+    // position: sticky;
+    // top: 0;
   }
 }
 
