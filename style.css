@@ -112,13 +112,6 @@ h3 {
 .product-container .product-card img {
   max-inline-size: 70%;
 }
-.product-container .product-card .price {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 .product-container .product-card .buttons {
   display: flex;
   flex-direction: row;
@@ -126,28 +119,9 @@ h3 {
   align-items: center;
   width: 70%;
 }
-.product-container .product-card .buttons .button {
-  background-color: #434346;
-  border: none;
-  color: white;
-  padding: 10px 5px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
-  width: 90px;
-}
-.product-container .product-card .buttons .button:hover {
-  cursor: pointer;
-  background-color: #b35500;
-}
 @media (width > 875px) {
   .product-container .product-card img {
     max-inline-size: 80%;
-  }
-  .product-container .product-card .price {
-    width: 55%;
   }
   .product-container .product-card:last-of-type img {
     margin-bottom: 67px;
@@ -232,6 +206,16 @@ main .main-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+main .main-container article div .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .main-container article div .special {
+  width: 120px;
+  padding: 20px 10px;
+  font-size: 1.3rem;
 }
 @media (width > 875px) {
   main .main-container {
@@ -467,4 +451,40 @@ footer a:hover {
 footer p:first-of-type {
   font-size: 1.3rem;
   color: #ff7f00;
+}
+
+.button {
+  background-color: #434346;
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 90px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #b35500;
+}
+
+.price {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.price.special {
+  width: 70%;
+  padding: 20px 10px;
+  font-size: 1.3rem;
+}
+@media (width > 875px) {
+  .price {
+    width: 55%;
+  }
 }/*# sourceMappingURL=style.css.map */
