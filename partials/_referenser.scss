@@ -42,3 +42,18 @@ background-color: $backgroundcolor;
     font-size: 1rem;
     font-family: $arial;
 }
+
+.stars {
+    color: gold;
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+}
+
+.namn {
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
