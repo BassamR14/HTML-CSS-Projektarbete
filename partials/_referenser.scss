@@ -17,6 +17,7 @@ background-color: $backgroundcolor;
 @include desktop {
     @include flex(row, space-evenly, center);
     height: 500px;
+    max-width: 1440px;
   }
 }
 
@@ -48,12 +49,10 @@ background-color: $backgroundcolor;
     display: inline-block;
     margin-right: 100px;
     vertical-align: bottom;
-    margin-bottom: 10px;
 }
 
 .namn {
     display: inline-block;
     color: black;
     font-size: 16px;
-    margin-bottom: 10px;
 }
