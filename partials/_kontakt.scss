@@ -1,7 +1,4 @@
 @import "variables";
-@import "mixins";
-@import "media-query";
-@import "base";
 
 .Kontakt-rubrik {
     text-align: center;
@@ -79,5 +76,9 @@ width: 90%;
 }
 
 strong {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
+}
+
+.mailrubrik {
+  font-size: 24px;
 }
