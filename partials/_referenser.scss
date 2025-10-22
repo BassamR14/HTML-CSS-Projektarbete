@@ -28,6 +28,7 @@ background-color: $backgroundcolor;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
+    text-decoration: none;
 
     &:hover {
         background-color: #eeeeee;
@@ -54,4 +55,8 @@ background-color: $backgroundcolor;
     display: inline-block;
     color: black;
     font-size: 16px;
+}
+
+p {
+    color: black;
 }
