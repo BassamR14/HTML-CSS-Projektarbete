@@ -7,7 +7,6 @@
 
 .referens-container {
 @include flex(column, space-around, center);
-box-sizing: border-box;
 flex-wrap: wrap;
 gap: 0.5rem;
 margin: 0 auto;
