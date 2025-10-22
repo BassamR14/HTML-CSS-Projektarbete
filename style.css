@@ -258,8 +258,9 @@ footer p:first-of-type {
   border-radius: 6px;
 }
 
-.right select {
-  width: 90%;
+.right label {
+  width: 110%;
+  margin-bottom: 20px;
 }
 
 .skicka {
