@@ -475,6 +475,9 @@ h3 {
   text-align: center;
   text-decoration: none;
 }
+.recension p {
+  color: black;
+}
 .recension:hover {
   background-color: #eeeeee;
 }
@@ -500,10 +503,6 @@ h3 {
   display: inline-block;
   color: black;
   font-size: 16px;
-}
-
-p {
-  color: black;
 }
 
 .startpage {
