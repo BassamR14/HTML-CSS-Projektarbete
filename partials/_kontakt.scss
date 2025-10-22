@@ -14,7 +14,7 @@ margin: 0 auto;
 max-width: 1440px;
 
 @include desktop {
-    @include flex(row, space-around, center);
+    @include flex(row, space-around, flex-start);
   }
 }
 
