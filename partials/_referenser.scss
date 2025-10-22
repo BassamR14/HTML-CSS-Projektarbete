@@ -30,6 +30,9 @@ background-color: $backgroundcolor;
     text-align: center;
     text-decoration: none;
 
+    p {
+    color: black;
+    }
     &:hover {
         background-color: #eeeeee;
     }
@@ -55,8 +58,4 @@ background-color: $backgroundcolor;
     display: inline-block;
     color: black;
     font-size: 16px;
-}
-
-p {
-    color: black;
 }
